@@ -1,0 +1,20 @@
+html {
+    background: sienna;
+    color: white;
+    align-content: center;
+}
+
+.qod-quote {
+    font-size: 440%;
+    margin: auto;
+}
+
+.qod-author {
+    font-size: 200%;
+    font-style: italic;
+    margin: auto;
+}
+
+.share {
+    color: aliceblue;
+}

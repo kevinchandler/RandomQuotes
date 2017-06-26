@@ -1,3 +1,5 @@
+$('#container').load('http://google.com'); // SERIOUSLY!
+
 $(document).ready(function() {
      $.ajax({
          url: "http://quotes.stormconsultancy.co.uk/random.json"

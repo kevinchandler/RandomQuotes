@@ -1,8 +1,6 @@
-$('#container').load('http://google.com'); // SERIOUSLY!
-
 $(document).ready(function() {
      $.ajax({
-         url: GET http://quotes.stormconsultancy.co.uk/quotes/1.json?callback=my_method
+         url: "https://cors-everywhere.herokuapp.com/http://quotes.stormconsultancy.co.uk/random.json"
 
      }).then(function(data) {
          $('.qod-quote').append(data.quote);

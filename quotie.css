@@ -1,20 +1,16 @@
-html {
-    background: sienna;
-    color: black;
-    align-content: center;
+body {
+  background-color: #ffd9b3;
 }
-
-.container-fluid {
-    position: centered;
-    color: black;
-    top: 10%;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    width: 60%;
-    height: auto;
-    font-size: 140%;
+.box {
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+background-color: white;
+width: 60%;
+position: center;
+margin-left: auto;
+  margin-right: auto;
+z-index:1;
 }
 
 .qod-quote {

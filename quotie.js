@@ -1,10 +1,17 @@
+var url = "https://cors-everywhere.herokuapp.com/http://quotes.stormconsultancy.co.uk/random.json"
+ var getQuote = function(data) {
+  $(".qod-quote").text(data.quote);
+  var quot = 'https://twitter.com/intent/tweet?text=' + data.quote + ' Author ' + data.author;
+  if (data.author === '') {
+    data.author = 'Unknown';
+  }
+  $(".qod-author").text(data.author);
+  $(".twitter-share-button").attr("href", quot);
+};
 $(document).ready(function() {
-     $.ajax({
-         url: "https://cors-everywhere.herokuapp.com/http://quotes.stormconsultancy.co.uk/random.json"
+  $.getJSON(url, getQuote, 'jsonp');
 
-     }).then(function(data) {
-         $('.qod-quote').append(data.quote);
-         $('.qod-author').append(data.author);
-
-     });
- });
+});
+$("#quote").click(function() {
+  $.getJSON(url, getQuote, 'jsonp');
+});
